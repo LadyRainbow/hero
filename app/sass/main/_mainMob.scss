@@ -1,0 +1,137 @@
+:root {
+  --browser-address-bar: 0px;
+}
+section.main-mob {
+    position: relative;
+    padding-bottom: 270px;
+    background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/bg-mob.png') center repeat-y;
+    background-size: cover;
+    .top-part {
+        width: 100%;
+        height: calc(100vh + 50px);
+        background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/bg1-mob.png') center no-repeat;
+        background-size: cover;
+    }
+    .first-screen-mob {
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        img {
+            margin-top: 70px;
+            width: 63px;
+            height: 101px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 80px;
+            line-height: 55px;
+            font-family: 'sirius';
+            margin-bottom: 44px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .arrow-down-mob {
+            position: absolute;
+            left: calc(50% - 14px);
+            bottom:20px;
+            transform: rotate(90deg);
+            font-family: 'sirius';
+            font-size: 48px;
+            animation: moveDownMob 800ms linear infinite alternate;
+        }
+    }
+    .first-man-mob {
+        position: relative;
+        margin-top: -20px;
+        padding-top: 56px;
+        width: 100%;
+        background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2019/01/1-man-mob.png') -30px 0px no-repeat;
+        background-size: cover;
+        padding-bottom: 30px;
+    }
+    .second-man-mob {
+        position: relative;
+        margin-top: -20px;
+        padding-top: 56px;
+        width: 100%;
+        background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2019/01/2-man-mob.png') -60px -0px no-repeat;
+        background-size: cover;
+        padding-bottom: 30px;
+    }
+    .content-mob {
+        position: relative;
+    }
+    .details {
+        position: relative;
+        margin-top: -20px;
+        padding-top: 63px;
+        padding-bottom: 70px;
+        background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2019/01/substrate-mob.png')top no-repeat;
+        background-size: cover;
+        p {
+            line-height: 25px;
+            font-size: 15px;
+        }
+        .show-more {
+            text-align: center;
+            margin-top: 43px;
+            position: relative;
+            span {
+                font-size: 30px;
+                position: relative;
+                z-index: 2;
+                font-family: 'sirius';
+            }
+            &::after {
+                position: absolute;
+                content: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/brush.png');
+                top: 0;
+                left: 50%;
+                margin-left: -70px;
+                margin-top: -55px;
+            }
+        }
+    }
+    .text-right {
+        position: relative;
+        width: 50%;
+        left: 50%;
+    }
+    .model {
+        text-align: left;
+        font-size: 20px;
+        font-family: 'sirius';
+        letter-spacing: 8px;
+    }
+    .model-name {
+        text-align: left;
+        font-family: 'sirius';
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .flex-line {
+        margin-top: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .model-img {
+        height: 255px;
+    }
+    .slogan {
+        font-size: 40px;
+        font-family: 'sirius';
+        line-height: 1;
+    }
+}
+@keyframes moveDownMob {
+  0% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 25px;
+  }
+}

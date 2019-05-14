@@ -1,0 +1,172 @@
+section.content-page {
+    padding-top: 208px;
+    padding-bottom: 200px;
+    background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/product-bg.png') center repeat-y;
+    background-size: cover;
+    .content-content-page {
+        margin: 0 auto;
+        width: 780px;
+        h1 {
+            font-size: 100px;
+            line-height: 1;
+            font-family: 'sirius';
+            margin-bottom: 42px;
+        }
+        h2 {
+            margin-top: 75px;
+            font-family: 'sirius';
+            margin-bottom: 34px;
+            font-size: 50px;
+            line-height: 50px;
+            color: #ca2b2b;
+        }
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            span {
+                color: #ca2b2b;
+            }
+            & + p {
+                margin-top: 28px;
+            }
+        }
+        img {
+            width: 100%;
+            margin-top:50px;
+            margin-bottom: 50px;
+            & + h2 {
+                margin-top: 25px;
+            }
+        }
+        cite {
+            margin: 30px 0;
+            position: relative;
+            font-style: normal;
+            display: block;
+            font-family: 'sirius';
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 100%;
+            padding-left: 29px;
+            p {
+                font-size: 30px;
+                line-height: 40px;
+                width: 720px;
+            }
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 5px;
+                background-color: #ca2b2b;
+                content:'';
+            }
+        }
+        ul {
+            margin-top: 13px;
+            margin-bottom: 37px;
+            li {
+                position: relative;
+                padding-left: 20px;
+                font-size: 18px;
+                line-height: 40px;
+                &::before {
+                    content: '•';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #ca2b2b;;
+                }
+            }
+        }
+    }
+}
+
+section.content-page-mob {
+    padding-top: 75px;
+    position: relative;
+    padding-bottom: 270px;
+    background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/bg-mob.png') center repeat-y;
+    background-size: cover;
+    .rubric {
+        font-size: 20px;
+        font-family: 'sirius';
+        letter-spacing: 8px;
+        color: #ca2b2b;
+        line-height: 1;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        font-family: 'sirius';
+        margin-bottom: 35px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        span {
+            color: #ca2b2b;
+        }
+        & + p {
+            margin-top: 28px;
+        }
+    }
+    img {
+        width: 100%;
+        margin-top: 45px;
+        margin-bottom: 50px;
+    }
+    h2 {
+        font-size: 40px;
+        color: #ca2b2b;
+        margin-bottom: 26px;
+        line-height: 1;
+        font-family: 'sirius';
+    }
+    cite {
+        margin: 43px 0;
+        position: relative;
+        font-style: normal;
+        display: block;
+        font-family: 'sirius';
+        padding-top: 35px;
+        padding-bottom: 40px;
+        width: 100%;
+        p {
+            font-size: 26px;
+            line-height: 30px;
+            width: 224px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &::before, &::after {
+            position: absolute;
+            content: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2019/01/border-red.png');
+            left: 0;
+            width: 100%;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+    ul {
+        margin-bottom: 37px;
+        li {
+            position: relative;
+            padding-left: 16px;
+            font-size: 15px;
+            line-height: 30px;
+            &::before {
+                content: '•';
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #ca2b2b;;
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "custom";
+@import "header/header";
+@import "footer/footer";
+@import "menu";
+@import "main/main";
+@import "cart/cart";
+@import "main/mainMob";
+@import "policy/policy";
+@import "product/product";
+@import "popUp/popUp";
+@import "checkout/checkout";
+@import "contentPage/contentPage";
+@import "mCustomScrollBox";
+
+
+body {
+    position: relative;
+    font-family: 'ptserif-regular';
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    &.compensate-for-scrollbar {
+        padding-right: 17px;
+        overflow: hidden;
+    }
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+}
+.desctop, .mobile, .mobi-rotate {
+    position: relative;
+    display: none;
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.desctop {
+    width: 100%;
+    overflow: hidden;
+    .pages-wrapper, .header-wrapper, .footer-wrapper, .menu-wrapper {
+        position: relative;
+        left: -4px;
+        width: calc(100% + 4px);
+        & > * {
+            filter: none;
+            will-change: filter;
+            transition: filter .4s ease-in;
+        }
+
+        .content {
+            position: relative;
+            width: 1080px;
+            padding: 0 10px;
+            margin: 0 auto;
+        }
+        &.open-cart {
+            & > * {
+                filter: grayscale(60%) blur(3px);
+            }
+        }
+    }
+}
+footer canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  height: 100%;
+  width: 100vw;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.mobile {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    p {
+        font-size: 15px;
+    }
+    .content-mob {
+        width: 100%;
+        padding: 0 5vw;
+        width: 320px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+}
+
+/*MEDIA*/
+@media (min-width: 1224px) {
+    .desctop {
+        display: block;
+    }
+}
+@media screen and (max-width: 1223px) and (min-width: 320px) {
+    .mobile {
+        display: block;
+    }
+    @media (orientation:landscape) {
+        .mobile {display:none}
+        .mobi-rotate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            height: 100%;
+            background-image: -moz-linear-gradient( -45deg, #1b0b0b 0%, #652929 100%);
+            background-image: -webkit-linear-gradient( -45deg, #1b0b0b 0%, #652929 100%);
+            background-image: -ms-linear-gradient( -45deg, #1b0b0b 0%, #652929 100%);
+            p {
+                font-family: 'sirius';
+                font-size: 25px;
+                color:#fff;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .mobile {
+            font-size: 16px;
+        }
+    }
+}

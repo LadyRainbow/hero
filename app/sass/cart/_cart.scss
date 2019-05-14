@@ -1,0 +1,307 @@
+section.cart-popup {
+    padding-left: 83px;
+    padding-top: 55px;
+    background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2019/01/cart-bg.png') right repeat-y;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    .cart-hat {
+        width: 835px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 9px;
+        .arrow-wrp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 87px;
+            height: 72px;
+            img {
+                cursor: pointer;
+                position: relative;
+                z-index: 2;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                width: 197px;
+                height: 131px;
+                top: -28px;
+                right: -78px;
+                background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/brush.png') center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    .cart-content {
+        height: 100%;
+        overflow-y: auto;
+    }
+    .cart-bottom {
+        padding-top: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 743px;
+        padding-left: 36px;
+        padding-right: 76px;
+        .price-property {
+            font-size: 18px;
+        }
+        .price-value {
+            font-size: 80px;
+            font-family: 'sirius';
+            line-height: 1;
+            span {
+                font-size: 50px;
+            }
+        }
+    }
+    .to-order-btn-wrp {
+        position: relative;
+        width: 190px;
+        height: 50px;
+        margin-right: -25px;
+        .to-order-btn {
+            top: 5px;
+            width: 100%;
+            text-align: center;
+            left: 0;
+            font-family: 'sirius';
+            font-size: 30px;
+            line-height: 50px;
+            position: absolute;
+            z-index: 2;
+            transition: all .3s;
+            cursor: pointer;
+            &:hover {
+                letter-spacing: 1.1px;
+            }
+        }
+        &::after {
+            right: -25px;
+            top: -25px;
+            content: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/brush.png');
+            position: absolute;
+            transform: scale(1.55) rotate(17deg);
+        }
+    }
+    .title {
+        font-size: 30px;
+        font-family: 'sirius';
+    }
+    .item {
+        width: 745px;
+        padding-top: 58px;
+        padding-bottom: 90px;
+        position: relative;
+        h5 {
+            display: flex;
+            align-items: center;
+        }
+        .flex-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 301px;
+            margin-right: 60px;
+            .quantity {
+                width: 109px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .quantity-product-input {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 50px;
+                    font-family: 'sirius';
+                    background: transparent;
+                    text-align: center;
+                    padding: 0;
+                    &::placeholder {
+                        font-family: 'sirius';
+                    }
+                }
+                .quantity-btn {
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    border: 1px solid #a42323;
+                    text-align: center;
+                    color: #a42323;
+                    font-size: 40px;
+                    font-family: 'sirius';
+                    cursor: pointer;
+                    &.minus {
+                        font-size: 50px;
+                    }
+                    span {
+                        margin-top: -1px;
+                    }
+                }
+            }
+        }
+        &::after {
+            position: absolute;
+            content: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/border-item.png');
+            bottom: 0;
+            left: 0;
+        }
+        .item-hat {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .item-close {
+                width: 18px;
+                height: 18px;
+                background: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/close.png') center no-repeat;
+                background-size: cover;
+                margin-right: 23px;
+                cursor: pointer;
+            }
+            .item-img-wrp {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                overflow: hidden;
+                margin-right: 28px;
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    content: url('http://xn--80abg7bml1dg.xn--p1ai/wp-content/uploads/2018/12/border-item-img.png');
+                }
+                .item-img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .item-name {
+                font-size: 50px;
+                line-height: 50px;
+                font-family: 'sirius';
+                border: none;
+            }
+            .amount {
+                position: relative;
+                font-family: 'sirius';
+                height: 50px;
+                line-height: 50px;
+                span {
+                    font-size: 50px;
+                }
+                &::after {
+                    content: ' руб';
+                    font-size: 30px;
+                }
+            }
+        }
+        .btn {
+            width: 35px;
+            height: 35px;
+            .show-more {
+                width: 35px;
+                height: 35px;
+                // position: absolute;
+                // right: 0;
+                // top: 30px;
+                font-family: 'sirius';
+                font-size: 70px;
+                transform: rotate(90deg);
+                cursor: pointer;
+                color: #fff;
+                transform: rotate(90deg);
+                span {
+                    position: absolute;
+                    top: 4px;
+                    left: 10px;
+                }
+            }
+            &[aria-expanded="true"] {
+                .show-more {
+                    color: #ca2b2b;
+                    transform: rotate(270deg);
+                }
+            }
+        }
+        .item-details-wrp {
+            width: 100%;
+            margin-left: 168px;
+        }
+        .item-details {
+            position: relative;
+            padding-top: 10px;
+            opacity: 1;
+            transition: all .5s;
+            .additional-item {
+                display: flex;
+                align-items: center;
+                height: 32px;
+                .additional-item-name {
+                    font-size: 18px;
+                    opacity: .8;
+                }
+                .quantity-product-input {
+                    opacity: .8;
+                    font-size: 18px;
+                    font-family: 'ptserif-regular';
+                    &::placeholder {
+                        font-size: 18px;
+                        font-family: 'ptserif-regular';
+                    }
+                }
+                .additional-amount {
+                    opacity: .8;
+                    position: relative;
+                    height: 32px;
+                    line-height: 32px;
+                    span {
+                        font-size: 18px;
+                    }
+                    &::after {
+                        content: ' руб';
+                        font-size: 18px;
+                    }
+                }
+                & + .additional-item {
+                    margin-top: 20px;
+                }
+            }
+            .total-amount-wrp {
+                font-family: 'sirius';
+                display: flex;
+                align-items: flex-end;
+                margin-top: 45px;
+                margin-bottom: 27px;
+                span {
+                    margin-right: 316px;
+                    font-size: 30px;
+                }
+                .total-amount {
+                    color: #ca2b2b;
+                    font-size: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    &::after {
+                        content: ' руб';
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
